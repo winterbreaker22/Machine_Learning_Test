@@ -3,10 +3,8 @@
     <div class="" role="section" tabindex="0">
         
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell"><div id="sharing-control-portal-1" class="sharing-control-portal"><div class="sc-bhjgvs eSYDTA cell-sharing-control"><div class="sc-irEpRR fEsHfI"><button aria-label="Copy cell link" title="Copy cell link" class="sc-pFPEP bgIjeN google-symbols notranslate">link</button><button aria-label="Embed cell" title="Embed cell" class="sc-pFPEP bgIjeN google-symbols notranslate">code</button></div></div></div>
+</div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>You've built a model. But how good is it?</p>
-<p>In this lesson, you will learn to use model validation to measure the quality of your model. Measuring model quality is the key to iteratively improving your models.</p>
 <h1 id="What-is-Model-Validation" tabindex="0">What is Model Validation<a class="anchor-link" href="https://www.kaggle.com/code/dansbecker/model-validation#What-is-Model-Validation" target="_self" rel=" noreferrer nofollow">¶</a></h1><p>You'll want to evaluate almost every model you ever build. In most (though not all) applications, the relevant measure of model quality is predictive accuracy. In other words, will the model's predictions be close to what actually happens.</p>
 <p>Many people make a huge mistake when measuring predictive accuracy. They make predictions with their <em>training data</em> and compare those predictions to the target values in the <em>training data</em>. You'll see the problem with this approach and how to solve it in a moment, but let's think about how we'd do this first.</p>
 <p>You'd first need to summarize the model quality into an understandable way. If you compare predicted and actual home values for 10,000 houses, you'll likely find mix of good and bad predictions. Looking through a list of 10,000 predicted and actual values would be pointless. We need to summarize this into a single metric.</p>
