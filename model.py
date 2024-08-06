@@ -1,20 +1,14 @@
-<<<<<<< Updated upstream
-=======
 
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.metrics import mean_absolute_error
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
->>>>>>> Stashed changes
 import pandas as pd
 
 file_path = 'melb_data.csv'
 melb_data = pd.read_csv(file_path)
 melb_data = melb_data.dropna(axis=0)
 y = melb_data.Price
-<<<<<<< Updated upstream
-print (y)
-=======
 print (y)
 
 melb_features = ['Rooms', 'Bathroom', 'Landsize', 'Lattitude', 'Longtitude']
@@ -39,4 +33,3 @@ forest_model = RandomForestRegressor(random_state=1)
 forest_model.fit(train_X, train_y)
 melb_preds = forest_model.predict(val_X)
 print(mean_absolute_error(val_y, melb_preds))
->>>>>>> Stashed changes
